@@ -9,6 +9,27 @@ let total = 0;
 
 clearOperation();
 checkFirstNumber();
+sumOperation();
+
+
+function sumOperation() {
+    buttonSum.addEventListener("click", function() {
+        //console.log("tamanho " + arrNumbers.length);
+        let numberInput = document.querySelector("#input-num");
+        if (arrNumbers.length == 1 ) {
+            arrNumbers.push("+");
+            /* arrNumbers.forEach(function(n) {
+                console.log(n);
+            }) */
+        } else if (arrNumbers.length >= 2 ) {
+            arrNumbers.push(saveNumber(numberInput));
+            arrNumbers.push("+");
+            /* arrNumbers.forEach(function(n) {
+                console.log(n);
+            }) */        
+        }        
+    })
+}
 
 function checkFirstNumber() {
     let ops = document.querySelectorAll(".button-op");
