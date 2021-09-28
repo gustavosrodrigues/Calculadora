@@ -8,7 +8,26 @@ let arrNumbers = []
 let total = 0;
 
 clearOperation();
+checkFirstNumber();
 
+function checkFirstNumber() {
+    let ops = document.querySelectorAll(".button-op");
+    ops.forEach(function(operation) {
+        operation.addEventListener("click", function() {    
+            let numberInput = document.querySelector("#input-num");    
+            
+            if (checkInputEmpty(numberInput)) {
+                console.log("vazio");
+                return;        
+            } 
+            if (arrNumbers.length == 0) {
+                arrNumbers[0] = saveNumber(numberInput);
+                console.log(`first ${arrNumbers[0]}`);
+                clearInput();
+            }
+        })
+    })
+}
 
 function saveNumber(number) {
     return number.value;    
