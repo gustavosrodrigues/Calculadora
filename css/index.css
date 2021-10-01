@@ -92,3 +92,7 @@ li {
     width: 20%;
     height: 30px;
 }
+
+#preview {
+    text-align: center;
+}
