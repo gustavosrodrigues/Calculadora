@@ -11,3 +11,6 @@ Calculadora simples com as quatro operações matemáticas.
   <br>
   <img src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/visual-studio-code/visual-studio-code.png" alt="VS Code" height="40" title="Visual Studio Code">  
 </p>
+
+## Calculadora
+<img src="https://raw.githubusercontent.com/gustavosrodrigues/Calculadora/main/img/calculadora.png" alt="Calculadora" width="1280" title="Calculadora">
